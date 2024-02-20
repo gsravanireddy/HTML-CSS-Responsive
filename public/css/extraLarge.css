@@ -1,0 +1,106 @@
+/* On screens that are 1600px or above*/
+@media screen and (min-width: 1600px) {
+    .slant {
+      height: 685px;
+    }
+  
+    .window {
+      margin-left: 5%;
+    }
+  
+    .tab {
+      padding: 30%;
+    }
+  
+    /*FEATURES SECTION*/
+    .features .row {
+      padding-left: 10%;
+    }
+  
+    .features .left {
+      padding-left: 10%;
+    }
+  
+    .features .row .left img {
+      padding-top: 50px;
+    }
+  
+    .features .row .left h3::before {
+      top: 40px;
+      right: 15px;
+    }
+    
+    .features .row .left h3 {
+      line-height: 60px;
+      text-align: left;
+    }
+    
+    .features .row .left p {
+      padding-bottom: 5%;
+      padding-right: 30%;
+      line-height: 30px;
+    }
+    
+    .features .row .right img {
+      padding: 25% 30%; 
+  }
+    
+    .features > h2,
+    .our-team > h2,
+    .how-it-works > h2 {
+      line-height: 60px;
+    }
+    
+    .features > p,
+    .our-team > p,
+    .how-it-works > p {
+      padding: 1% 30%;
+      line-height: 28px;
+    }
+      
+    /*INFORMATION SECTION*/
+    .info .left p {
+      padding: 0 15% 5% 25%;
+      line-height: 34px;
+    }
+    
+    .info .right p {
+      padding: 0 30% 3.5% 5%;
+      line-height: 30px;
+    }
+    
+    /*OUR_TEAM SECTION*/
+    .cards-section {
+      display: flex;
+      padding: 2% 15% 0 15%;
+    }
+    
+    .name {
+      line-height: 24px;
+      padding: 2% 0;
+    }
+    
+    .about {
+      line-height: 20px;
+    }
+    
+    /*HOW-IT-WORKs SECTION*/
+    .how-it-works .row .left img {
+      padding: 30%;
+    }
+  
+    .how-it-works .right {
+      margin: 0;
+    }
+    
+    .how-it-works .right h3 {
+      line-height: 60px;
+      padding: 0 10% 2% 5%;
+    }
+    
+    .how-it-works .right p {
+      padding: 0 26% 0 5%;
+      line-height: 34px;
+    }
+  }
+  

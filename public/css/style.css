@@ -1,0 +1,398 @@
+:root {
+  --black: #000001;
+  --black-russian: #00000014;
+  --blue-ribbon: #0F6AFC;
+  --carnation: #FE5060;
+  --malachite: #32F370;
+  --mirage: #1A2235;
+  --dark-blue: #192232;
+  --royal-blue: #3B80EE;
+  --sunglow: #FFD633;
+  --stratos: #00000029;
+  --white: #FFFFFF;
+
+  /*gray shades*/
+  --alto: #DDDDDD; 
+  --athens-gray: #E1E3EC;
+  --dark-gray: #636363;
+  --dove-gray: #666666;
+  --gallery: #EEEEEE;
+  --ghost: #C0C3D0;
+  --gray: #E1E4EC;
+  --mercury: #E5E5E5;
+  --mine-shaft: #333333;
+  --silver: #CCCCCC;
+  --tundora: #464646;
+
+}
+
+  body {
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+  }
+
+  section {
+    padding: 10% 5%;
+  }
+
+  span, p, .quote blockquote {
+    font-size: 1em;
+  }
+
+  p, .quote blockquote {
+    line-height: 1.5em;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column{
+    flex: 1;
+  }
+
+  .center-image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .slant {
+      background-color: var(--mirage);
+      clip-path: polygon(0 0,100% 0,100% 90%,0 100%);
+      height: 410px;
+      position: absolute;
+      vertical-align:middle;
+      width: 100%;
+      z-index: -2;
+  }
+
+  /*.bg-rays{
+    display: none;
+  }
+
+  /** HEADER PART **/
+  .header {
+    color: var(--white);
+    padding: 2% 0 10%;
+  }
+
+  /** UPPER PART OF HEADER **/
+  .top-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    margin: 0 5%;
+    padding-bottom: 2%;
+  }
+
+  .top-header > img{
+    vertical-align: middle;
+    width: 5%;
+    padding: 0 2%;
+}
+
+  .top-header > span {
+    align-self: center;
+    font-size: 0.8em;
+    flex: 3;
+  }
+
+  .top-header > span.slogan {
+      display: none;
+      line-height: 19px;
+  }
+
+  .top-nav {
+    align-self: center;
+    flex: 2;
+    text-align: end;
+}
+
+  .header a {
+    color: var(--white);
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  
+  /** SECOND PART(LOWER) OF HEADER **/
+  /** Consists of two columns, where left column is for text and right column is for tab **/
+  .bottom-header {
+    padding: 10% 10%;
+  }
+
+  .bottom-header .one > img {
+    padding-bottom: 5%;
+    width: 20%;
+  }
+
+  .bottom-header .one > h1 {
+    font-weight: 600; 
+    line-height: 1.5em;
+    font-size: 1.3em;
+  }
+
+  .bottom-header .one > p {
+    color: var(--alto); 
+    font-size: 0.8em;
+    line-height: 2em;
+    margin: 5% 0 10%;
+  }
+
+  .button {
+    background-image: linear-gradient(to top left, var(--blue-ribbon), var(--royal-blue));
+    border-radius: 4px;
+    padding: 2.5% 6% 3% 6%;
+    width: 100%;
+  }
+
+  .bottom-header .column.two {
+    display: none;
+  }
+  /** END OF HEADER PART **/
+
+  /** FEATURES SECTION **/
+  /** Consists of two columns, where left column is for text and right column is for TA Digital logo **/
+  .features > h2, .our-team > h2, .how-it-works > h2 {
+    padding: 2%;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .features > p, .our-team > p, .how-it-works > p {
+      font-size: 0.8em;
+      line-height: 1.75em;
+      padding: 2% 0;
+      text-align: center;
+  }
+
+  .features > h2,
+  .our-team > h2 {
+    color: var(--mine-shaft);
+  }
+
+  .features > p,
+  .our-team > p {
+    color: var(--dove-gray);
+  }
+
+  .features > ul {
+    text-align: center;
+  }
+
+  .features > ul > li.circle {
+    color: var(--ghost);
+    display: inline-block;
+    font-size: 0.7em;
+    line-height: 2.33em;
+    padding: 6% 4.5%;
+  }
+
+  .features > ul > li.selected {
+    color: var(--mirage);
+  }
+
+  .circles .selected.circle::before {
+    border-color: var(--royal-blue);
+  }
+
+  .circles .circle::before {
+    border: 5px solid var(--athens-gray);
+    border-radius: 50%;
+    content: '';
+    display: flex;
+    height: 10px;
+    margin: auto auto 5%;
+    width: 10px;
+  }
+
+  .features .row {
+    padding: 0 5%;
+  }
+
+  .features .row .one, .features .row .two {
+    margin: 0 5%;
+  }
+
+  .features .row .one img {
+    padding: 5% 0 0;
+    width: 10%;
+  }
+
+  .features .row .one h3::before {
+    background-color: var(--royal-blue);
+    content: '';
+    display: block;
+    height: 17px;
+    position: relative;
+    right: 13px;
+    top: 20px;
+    transform: skew(
+25deg);
+    width: 5px;
+  }
+
+  .features .row .one h3 {
+    color: var(--black);
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 0 0 3%;
+  }
+
+  .features .row .one p {
+    color: var(--mine-shaft); 
+    padding: 0 0 10% 0;
+  }
+
+  .features .row .two {
+    height: 10em;
+    background-color: var(--athens-gray);
+    flex: auto;
+    box-shadow: 0px 3px 10px var(--black-russian);
+    border-radius: 5px;
+}
+
+  /** END OF FEATURES SECTION **/
+
+  /** INFORMATION SECTION **/
+  /** Consists of two equal width columns, where both columns are for text **/
+  .info {
+    background-color: var(--gray);
+  }
+
+  .info .column.one{
+    padding-bottom: 5%;
+  }
+
+  .info .column p {
+    padding: 0 10% 4% 10%;
+  }
+
+  .info .one p {
+    color: var(--tundora);
+  }
+
+  .info .two p {
+    color: var(--mine-shaft);
+    font-size: 0.9em;
+  }
+  /** END OF INFORMATION SECTION **/
+
+  /** OUR-TEAM SECTION **/
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2% 15% 0;
+  }
+
+  .box {
+    background-color: var(--white);
+    border: solid 1px var(--silver);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin: 2% 2% 4%
+  }
+
+  .box > figure{
+    margin: 2%;
+  }
+
+  .profile-pic {
+    background-color: var(--athens-gray);
+    border-radius: 5px;
+    color: var(--dark-gray);
+    width:100%
+  }
+
+  .name {
+    color: var(--mine-shaft);
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 3% 0;
+  }
+
+  .about {
+    color: var(--dove-gray);
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+  /** END OF OUR-TEAM SECTION **/
+
+  /** HOW-IT-WORKs SECTION **/
+  /** Consists of two columns, where left column is for TA Digital logo and right column is for text **/
+  .how-it-works {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+    padding-top: 15%;
+  }
+
+  .how-it-works .row {
+    padding-top: 5%;
+  }
+
+  .how-it-works .row .one {
+    flex: auto;
+    height: 10em;
+    background-color: var(--white);
+    margin: 0 15%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px var(--black-russian);
+  }
+
+  .how-it-works .two {
+    padding: 10% 10% 0;
+  }
+
+  .how-it-works .two h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0 10% 5% 0;
+  }
+  /** END OF HOW-IT-WORKS SECTION **/
+
+  /** QUOTE SECTION **/
+  .quote {
+    color: var(--tundora);
+    margin: 5% 0;
+    padding: 5% 10%;
+    text-align: center;
+  }
+
+  .quote-mark {
+    color: var(--tundora);
+    height: 60px;
+    font-size: 3.125em;
+    font-weight: 900;
+  }
+  /** END OF QUOTE SECTION **/
+
+  /** FOOTER **/
+  .footer-bar {
+    border-top: 1px solid var(--mercury);
+    display: flex;
+    margin: 0 10%;
+    padding: 3% 0;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-bar > span {
+    padding: 2% 0 8%;
+  }
+
+
+  .footer-nav li {
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .footer-nav a {
+    color: var(--dove-gray);
+    font-size: 1em;  
+    text-decoration: none;
+  }
+  /** END OF FOOTER **/
