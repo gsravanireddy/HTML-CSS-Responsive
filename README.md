@@ -1,8 +1,11 @@
 # Responsive_Webpage (HTML & CSS)
 Built with HTML5, it boasts a well-structured and accessible foundation, while CSS3 brings it to life with a visually captivating design. It incorporates responsive design principles, ensuring seamless adaptation across devices. This project serves as a springboard for further exploration of interactive elements, and advanced styling.
+<br/>
+<br/>
+<b> LIVE DEMO: https://gsravanireddy.github.io/HTML-CSS-Responsive/ </b> </br>
 
 ## Objective: 
-Demonstrate my comprehensive understanding of HTML structure, CSS styling, and responsive web design principles through the creation of a visually appealing and accessible webpage.
+Demonstrate my comprehensive understanding of HTML structure, CSS styling, and responsive web design principles by creating a visually appealing and accessible webpage.
 
 ## Key Features:
 <ul>
@@ -36,7 +39,7 @@ Demonstrate my comprehensive understanding of HTML structure, CSS styling, and r
 
 ## Future Enhancements:
 <ul>
-<li>Interaction Integration: Integratuon of dynamic elements using JavaScript (optional).</li>
+<li>Interaction Integration: Integration of dynamic elements using JavaScript (optional).</li>
 <li>Advanced Design Exploration: Experimentation with more complex styling techniques and animations (optional).</li>
 </ul>
 
